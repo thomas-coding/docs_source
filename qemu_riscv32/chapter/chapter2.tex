@@ -1,0 +1,18 @@
+\newpage
+\section{Chapter Two : Memory map}
+
+\lstset{
+    basicstyle=\tt,
+    %numbers=left,
+    %backgroundcolor=\color[RGB]{245,245,244},
+    %showstringspaces=false
+}
+\lstset{language=C}
+\begin{lstlisting} 
+static const MemMapEntry base_memmap[] = {
+    [THOMAS_RISCV32_CLINT] =        {  0x2000000,    0x10000 },
+    [THOMAS_RISCV32_UART0] =        { 0x10013000,     0x1000 },
+    [THOMAS_RISCV32_FLASH] =        { 0x20000000, 0x02000000 },
+    [THOMAS_RISCV32_SRAM] =         { 0x80000000, 0x02000000 },
+};
+\end{lstlisting}
